@@ -5,7 +5,8 @@ This project predicts IPL first innings scores using Linear,Random forest and Po
 The goal is to predict the first innings total score in an IPL match using features such as runs, wickets, and overs. The project experimented with multiple regression techniques, with Polynomial Regression (degree 2) being the most successful model in terms of generalization. Random Forest was also tested but showed signs of overfitting.
 
 # Dataset
-The dataset used is sourced from Kaggle: IPL Ball-by-Ball Dataset (2008-2022) and extended to include the 2023 season.
+- The dataset used is sourced from Kaggle: IPL Ball-by-Ball Dataset (2008-2023)
+- Some manually added data from 2024 IPL to prediction of unseen data. 
 
 # Key features include:
 
@@ -15,7 +16,7 @@ The dataset used is sourced from Kaggle: IPL Ball-by-Ball Dataset (2008-2022) an
 - Overs
 -  Balls
 - Total Runs
--  Wickets
+- Wickets
 - Run Rate
 - Runs/Wickets in Last 5 Overs
 
@@ -26,14 +27,13 @@ We tested the following models:
 - Polynomial Regression (degree 2)
 - Random Forest: Though it performed well on the training data, it overfitted, leading to poor generalization on unseen data.
 - Lasso and Ridge Regression (Explored but not chosen)
-- Random Forest Overfitting
-- Random Forest exhibited overfitting, with very low error on the training set but significantly higher error on the validation and test sets. Despite tuning hyperparameters, it couldn’t generalize well to unseen data.
+
 - Final Model: Polynomial Regression (degree 2)
 Polynomial Regression (degree 2) was chosen as the final model because it performed better on unseen data, with a good balance between training and validation errors.
 
 
 
-Example Predictions:
+- Example Predictions:
 
 Actual Runs	   :147
 
