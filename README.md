@@ -48,6 +48,7 @@ Key visualizations include:
 
 
 # Future Work
+-  In the future, We can improve the accuracy of the model used in this project. Factors like toss and pitch can be considered for the prediction.
 - To improve further, we could explore advanced models like Gradient Boosting or Neural Networks. Also, better feature engineering or the use of more complex ensembling methods could reduce overfitting in the Random Forest model.
 
 
