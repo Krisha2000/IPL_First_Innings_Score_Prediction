@@ -9,22 +9,26 @@ The dataset used is sourced from Kaggle: IPL Ball-by-Ball Dataset (2008-2022) an
 
 # Key features include:
 
-Match ID, Year
-Batting and Bowling Teams
-Overs, Balls
-Total Runs, Wickets
-Run Rate, Runs/Wickets in Last 5 Overs
+- Match ID,
+- Year
+- Batting and Bowling Teams
+- Overs
+-  Balls
+- Total Runs
+-  Wickets
+- Run Rate
+- Runs/Wickets in Last 5 Overs
 
 # Models Used
 We tested the following models:
 
-Linear Regression
-Polynomial Regression (degree 2)
-Random Forest: Though it performed well on the training data, it overfitted, leading to poor generalization on unseen data.
-Lasso and Ridge Regression (Explored but not chosen)
-Random Forest Overfitting
-Random Forest exhibited overfitting, with very low error on the training set but significantly higher error on the validation and test sets. Despite tuning hyperparameters, it couldn’t generalize well to unseen data.
-Final Model: Polynomial Regression (degree 2)
+- Linear Regression
+- Polynomial Regression (degree 2)
+- Random Forest: Though it performed well on the training data, it overfitted, leading to poor generalization on unseen data.
+- Lasso and Ridge Regression (Explored but not chosen)
+- Random Forest Overfitting
+- Random Forest exhibited overfitting, with very low error on the training set but significantly higher error on the validation and test sets. Despite tuning hyperparameters, it couldn’t generalize well to unseen data.
+- Final Model: Polynomial Regression (degree 2)
 Polynomial Regression (degree 2) was chosen as the final model because it performed better on unseen data, with a good balance between training and validation errors.
 
 
@@ -38,13 +42,13 @@ Predicted Runs : 142
 # Visualizations
 Key visualizations include:
 
-Correlation Heatmap: Displays feature relationships.
-Run Distribution: Shows IPL team performance over the years.
-Model Error Plots: Visualizing the training and validation errors across folds for different models.
+- Correlation Heatmap: Displays feature relationships.
+- Run Distribution: Shows IPL team performance over the years.
+- Model Error Plots: Visualizing the training and validation errors across folds for different models.
 
 
 # Future Work
-To improve further, we could explore advanced models like Gradient Boosting or Neural Networks. Also, better feature engineering or the use of more complex ensembling methods could reduce overfitting in the Random Forest model.
+- To improve further, we could explore advanced models like Gradient Boosting or Neural Networks. Also, better feature engineering or the use of more complex ensembling methods could reduce overfitting in the Random Forest model.
 
 
 
